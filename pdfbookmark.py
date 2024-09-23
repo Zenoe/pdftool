@@ -44,7 +44,7 @@ def extract_bookmarks(pdf_path):
                     title = outline.title
                     if parent_title:
                         title = f"{parent_title} > {title}"
-                    bookmarks.append(f"{title} (Page {actual_page_number})")
+                    bookmarks.append(f"{title} ( {actual_page_number})")
 
         try:
             _extract_bookmarks(reader.outlines)
